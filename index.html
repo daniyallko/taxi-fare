@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>CedCab</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/4b2ee26aaa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <header>
+      <nav  class="navbar navbar-expand-lg">
+          <a class="navbar-brand ">Ced<span class="gree">Cab</span></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span><i class="fas fa-bars logo text-dark"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active bl">
+                      <a class="nav-link text-dark" href="#features">Features <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item ">
+                      <a class="nav-link text-dark" href="#reviews">Reviews</a>
+                  </li>
+                  <li class="nav-item rbtn">
+                      <a class="btn" href="#signup">BOOK NOW</a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+  </header>
+<div id="bg" class="pt-2 pb-2">
+    <h1 class="text-center mt-lg-5 pt-lg-5 mt-sm-0 pt-sm-0 font-weight-bold">Book a City Taxi to your destination in town</h1>
+    <h5 class="text-center ">Choose from a range of categories and prices</h5>
+    <section class="container-fluid box col-lg-4 col-sm-10 col-xs-12 col-md-7 ml-lg-5 ml-md-5 pt-lg-4 mt-lg-4 pt-sm-0 mt-sm-0 mb-5 pb-3 pt-2">
+      <div class="text-center">
+        <div class="tup1">
+          <button class="btn btn-primary green btn-sm tup font-weight-bold">CITY TAXI</button><hr>
+        </div>
+        <h4 class="font-weight-bold">Your everyday travel partner</h4>
+        <h6>AC cabs for point to point travel</h6>
+      </div>
+        <form>
+            <div class="form-group  row feilds ">
+                <label class="col-sm-3"  for="pickup">PICKUP</label>
+                <select  class="form-control-plaintext col-sm-9 arro choose" id="pickup">
+                  <option value="" class="text-secondary" selected disabled hidden>Current Location</option>
+                  <option value="Charbagh">Charbagh</option>
+                  <option value="Indira Nagar">Indira Nagar</option>
+                  <option value="BBD">BBD</option>
+                  <option value="Barabanki">Barabanki</option>
+                  <option value="Faizabad">Faizabad</option>
+                  <option value="Basti">Basti</option>
+                  <option value="Gorakhpur">Gorakhpur</option>
+                </select>
+            </div>
+            <p id="ep" class="bg-danger text-center">Enter pickup point</p>
+            <div class="form-group  row feilds ">
+              <label class="col-sm-3"  for="drop">DROP</label>
+              <select  class="form-control-plaintext col-sm-9 arro choose" id="drop">
+                <option value=""  selected disabled hidden>Enter drop for ride estimate</option>
+                  <option value="Charbagh">Charbagh</option>
+                  <option value="Indira Nagar">Indira Nagar</option>
+                  <option value="BBD">BBD</option>
+                  <option value="Barabanki">Barabanki</option>
+                  <option value="Faizabad">Faizabad</option>
+                  <option value="Basti">Basti</option>
+                  <option value="Gorakhpur">Gorakhpur</option>
+              </select>
+          </div>
+          <p id="ed" class="bg-danger text-center">Enter Droping point</p>
+          <div class="form-group  row feilds ">
+            <label class="col-sm-3"  for="cabtype">CAB TYPE</label>
+            <select  class="form-control-plaintext col-sm-9 arro" id="cabtype">
+              <option value=""  selected disabled hidden>Drop down to select CAB type</option>
+              <option value="CedMicro">CedMicro</option>
+              <option value="CedMini">CedMini</option>
+              <option value="CedRoyal">CedRoyal</option>
+              <option value="CedSUV">CedSUV</option>
+            </select>
+        </div>
+        <p id="ec" class="bg-danger text-center">Enter Cabtype</p>
+        <div class="form-group  row feilds ">
+          <label class="col-sm-3" for="luggage">LUGGAGE</label>
+          <input type="text"  class="form-control-plaintext col-sm-9 arrow" id="lugg" placeholder="Enter weight in KG">
+          <p id="err" class="text-danger h6">*Luggage is not available in CedMicro</p>
+        </div>
+        <p id="nu" class="bg-danger text-center">Enter Numeric Weight Value</p>
+        <p id="fare" class="green text-center"></p>
+      
+            <div class="form-group ">
+                <input type="submit" class="btn green btn-primary btn-lg btn-block" id="button4" name="submit" value="Calculate Fare">
+            </div>
+        </form>
+    </div>
+    </section>
+  </div>
+
+    <div class="row text-center container-fluid  text text-center" id="footer">
+      <div class="col-md-4 col-lg-4 col-sm-12 pt-3">
+          <i class="fa fa-facebook-square ic ml-4 pt-2" aria-hidden="true"></i>
+          <i class="fa fa-twitter ic ml-4 pt-2" aria-hidden="true"></i>
+          <i class="fa fa-instagram ic ml-4 pt-2" aria-hidden="true"></i>
+      </div>
+
+      <div class="col-md-4 col-lg-4 col-sm-12 pt-3">
+          <a>Ced<span class="gree">Cab</span></a>
+      </div>
+      <nav class="col-md-4 col-lg-4 col-sm-12 pt-3" >
+          <a class="text-dark"  href="#features">FEATURES</a>
+          <a class="text-dark"  href="#reviews">REVIEWS</a>
+          <a class="text-dark" href="#">SIGN UP</a>
+      </nav>
+  </div>
+    
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

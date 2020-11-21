@@ -1,0 +1,62 @@
+#bg{
+    background-image: url(cab.jpg);
+    background-repeat: no-repeat;
+    
+}
+.green{
+    color: #CDDC39; !important
+}
+.gree{
+    background-color:  #CDDC39;
+    color: white;
+    border-radius: 5px;
+}
+.bl{
+    color: white;
+}
+.logo{
+    color: white;
+}
+h1 , h5{
+    color: white;
+}
+.box{
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.green{
+    background-color: #CDDC39;
+    color: black;
+}
+hr{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.tup{
+    border-radius: 20px;
+    padding: 0px 5px;
+    border: none;
+}
+label{
+    font-size: 10px;
+    margin: auto;
+    padding: auto;
+    color: grey;
+}
+.feilds{
+    background-color: #E2E2E2;
+    border-radius: 5px;
+    padding: 5px;
+    margin: .5px;
+    margin-bottom: 10px;
+}
+.btn:hover , .btn:active{
+    background-color: #CDDC39;
+}
+.arro{
+    -webkit-appearance: none;
+}
